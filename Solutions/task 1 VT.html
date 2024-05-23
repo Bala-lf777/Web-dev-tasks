@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Company members</title>
+        <link rel="icon" type="image/x-icon" href="/VeriTech/Images/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+                border: 3px solid black;
+                display: block;
+                margin: 0 auto;
+                background-color: #ececec;
+            }
+            .sub-heading{
+                color: white;
+                text-align: center;
+                border: 2px solid rgb(14, 77, 102);
+                border-radius: 10px;
+                display: inline-block;
+                padding: 10px;
+                box-shadow: 2px 2px 5px #142d4c;
+                padding-left: 25px;
+                padding-right: 22px;
+            }
+            .team 
+            {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 50px auto;
+                width: 80%; 
+            }
+            .member 
+            {
+                margin: 10px;
+                text-align: center;
+                padding: 20px;
+                h2:hover{
+                  font-size:xx-large;
+                  text-shadow: 1px 1px 2px black;
+                }
+                p:hover{
+                  font-size: large;
+                  text-shadow: 1px 1px 2px black;
+                }
+            }
+            img{
+                border-radius: 50%;
+            }
+            img:hover  {
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+                }
+            .mot{
+              text-align: center;
+              h2:hover{
+                color: white;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+              }
+            }
+            .painting{
+                animation-name: painting;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes painting {
+              0%{background-color: #545484;}
+              30%{background-color: #37275a;}
+              66% {background-color: #09082b;}
+              100%{background-color:  #545484;}
+            }
+            .triangle-left {
+              width: 0;
+              height: 0;
+              border-top: 50px solid transparent;
+              border-right: 75px solid #555;
+              border-bottom: 50px solid transparent;
+              float:right;
+            }
+            .triangle-right {
+              width: 0;
+              height: 0;
+              border-top: 50px solid transparent;
+              border-left: 75px solid #555;
+              border-bottom: 50px solid transparent;
+            }
+            .CEO{
+              text-shadow: 1px 1px 3px black;
+            }
+
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+              position: -webkit-sticky;
+              position: sticky;
+              top: 0;
+            }
+            li {
+              float: left;
+            }
+
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            li a:hover {
+              background-color: #111;
+            }
+        </style>
+    </head>
+    <body>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#leadership/management">LeaderShip/Management Team</a></li>
+        <li><a href="#developmentteam">Development Team</a></li>
+        <li><a href="#salesAndMarketingTeam">Sales and Marketing Team</a></li>
+      </ul>
+        <h2 class="sub-heading painting" style="margin-top: 60px;" id="home">VeryTech Lite</h2>      
+        <p>Welcome to VeryTech Lite, where a declicated team of professionals works together to bring innovation, creativity and expertise to software industry, get to know the individuals who make our company thrive.</p>
+        <p style="color: #596e79; text-align: center; font-size: 32px;">-------------------------------------------------------------</p>
+        <div class="mot"><h2>Meet Our Team</h2></div>
+        <div class="triangle-right"></div>
+        <h3 class="sub-heading painting" id="leadership/management">LeaderShip / Management Team</h3>
+        <section class="team">
+            <div class="member">
+                <img src="/VeriTech/Images/profession.jpeg">
+                <h2>Dr.KamalRaj</h2>
+                <p>VP, Development & Growth</p>
+            </div>
+            <div class="member CEO">
+                <img src="/VeriTech/Images/female.png">
+                <h2>Dr.VIDHYA</h2>
+                <p>Founder/CEO</p>
+            </div>
+            <div class="member CEO">
+              <img src="/VeriTech/Images/female.png">
+              <h2>DR.RAGHAVI</h2>
+              <p>Founder/CEO</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Ram Prasath</h2>
+              <p>VP, Sales & Marketing</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Vijay Thuruv</h2>
+              <p>VP, Finance & Operation</p>
+            </div>
+          </section>
+          <div class="triangle-left"></div>
+
+          <h3 class="sub-heading painting" id="developmentteam">Development Team</h3>
+
+          <section class="team">
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Hariharan</h2>
+              <p>Team Lead, SE</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>PrakashRaj</h2>
+              <p>Software Engineer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Guhan</h2>
+              <p>Software Engineer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Hari Ragav</h2>
+              <p>Software Engineer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Sunil</h2>
+              <p>Software Engineer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Rohan</h2>
+              <p>Software Engineer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Naraine</h2>
+              <p>Software Engineer</p>
+            </div>
+          </section>
+          <div class="triangle-right"></div>
+          <h3 class="sub-heading painting" id="salesAndMarketingTeam">Sales and Marketing Team</h3>
+          <section class="team">
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg"> 
+              <h2>Mohan</h2>
+              <p>Team Lead</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg">
+              <h2>Shyam</h2>
+              <p>Sales Officer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg"> 
+              <h2>Karthick</h2>
+              <p>Sales Officer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg"> 
+              <h2>prabakaran</h2>
+              <p>Sales Officer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg"> 
+              <h2>Vinoth</h2>
+              <p>Marketing Officer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg"> 
+              <h2>Faizal</h2>
+              <p>Marketing Officer</p>
+            </div>
+            <div class="member">
+              <img src="/VeriTech/Images/profession.jpeg"> 
+              <h2>Rafeeth</h2>
+              <p>Marketing Officer</p>
+            </div>
+          </section>
+    </body>
+</html>
